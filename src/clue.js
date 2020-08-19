@@ -92,9 +92,7 @@ const roomsArray = [
   { name: "Patio" },
 ];
 // ITERATION 2
-function selectRandom(array) {
-  
-}
+function selectRandom(array) {}
 
 function pickMystery() {
   return {
