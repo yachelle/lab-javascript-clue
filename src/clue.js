@@ -88,3 +88,29 @@ var mrGreen = {
   // Rooms' Collection
   var roomsArray = [];
   roomsArray.push(diningRoom, conservatory, kitchen, study, library, billiardRoom, lounge, ballroom, hall, spa, livingRoom, observatory, theater, guestHouse, patio);
+
+  // iteration 2
+
+  function selectRandom(array){
+
+  }
+
+  function pickMystery(){
+
+  return {
+      suspect: selectRandom(suspectsArray),
+      weapon: selectRandom(weaponsArray),
+      room: selectRandom(roomsArray),
+  }
+}
+
+// iteration 3
+
+function revealMystery (envelope){
+    let firstName = envelope.suspect.firstName;
+    let lastName = envelope.suspect.lastName;
+    let weapon = envelope.suspect.weapon;
+    let room = envelope.suspect.room;
+
+    return '${firstName} ${lastName}' killed Mr Boddy using the ${weapon} in the ${room}
+}
