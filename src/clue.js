@@ -4,8 +4,8 @@
 const suspectsArray = [];
 
 // Rooms Collection
-const roomsArray = [];
-
+const roomsArray = [ ]
+    
 // Weapons Collection
 const weaponsArray = [];
 
