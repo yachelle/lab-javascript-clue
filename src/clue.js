@@ -1,74 +1,90 @@
-// ITERATION 1
-
-// Suspects Collection
-const suspectsArray = [
-    {
-    firstName: "Jacob", 
-    lastName: "Green"
-    occupation: "Entrepreneur"
-    age: 45,
-    description: "He has a lot of connections"
-    image: "https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg"
-    color: "green"
-}
-    {
-    drOrchid<br>
-    firstName: Doctor<br>
-    lastName: Orchid<br>
-    occupation: Scientist<br>
-    age: 26<br>
-    description: PhD in plant toxicology. Adopted daughter of Mr. Boddy<br>
-    image: http://www.radiotimes.com/uploads/images/Original/111967.jpg<br>
-    color: white<br>
-}
-    {
-    profPlum<br>
-    firstName: Victor<br>
-    lastName: Plum<br>
-    occupation: Designer<br>
-    age: 22<br>
-    description: Billionaire video game designer<br>
-    image: https://66.media.tumblr.com/ee7155882178f73b3781603f0908617c/tumblr_phhxc7EhPJ1w5fh03_540.jpg <br>
-    color: purple<br>
-}
-    {
-    missScarlet<br>
-    firstName: Kasandra<br>
-    lastName: Scarlet<br>
-    occupation: Actor<br>
-    age: 31<br>
-    description: She is an A-list movie star with a dark past<br>
-    image: https://www.radiotimes.com/uploads/images/Original/111967.jpg<br>
-    color: red<br>
-}
-   { 
-    mrsPeacock<br>
-    firstName: Eleanor<br>
-    lastName: Peacock<br>
-    occupation: Socialité<br>
-    age: 36<br>
-    description: She is from a wealthy family and uses her status and money to earn popularity<br>
-    image: https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg<br>
-    color: blue<br>
-   }
-   {
-    mrMustard<br>
-    firstName: Jack<br>
-    lastName: Mustard<br>
-    occupation: Retired Football player<br>
-    age: 62<br>
-    description: He is a former football player who tries to get by on his former glory<br>
-    image: https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/04/08/unspecified-3.jpg<br>
-    color: yellow<br>
-}
-];
-
-// Rooms Collection
-const roomsArray = [];
-
-// Weapons Collection
-const weaponsArray = [];
-
-// ITERATION 2
-
-// ITERATION 3
+// Characters
+var mrGreen = {
+    first_name:   'Jacob',
+    last_name:    'Green',
+    color:        'green',
+    description:  'He has a lot of connections',
+    age:          '45',
+    image:        'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg',
+    occupation:   'Entrepreneur'
+  };
+  var drOrchid = {
+    first_name:   'Doctor',
+    last_name:    'Orchid',
+    color:        'white',
+    description:  'PhD in plant toxicology. Adopted daughter of Mr. Boddy',
+    age:          '26',
+    image:        'http://www.radiotimes.com/uploads/images/Original/111967.jpg',
+    occupation:   'Scientist'
+  };
+  var profPlum = {
+    first_name:   'Victor',
+    last_name:    'Plum',
+    color:        'purple',
+    description:  'Billionare video game designer',
+    age:          '22',
+    image:        'https://metrouk2.files.wordpress.com/2016/07/professor-plum.jpg',
+    occupation:   'Designer'
+  };
+  var missScarlet = {
+    first_name:   'Kasandra',
+    last_name:    'Scarlet',
+    color:        'red',
+    description:  'She is an A-list movie star with a dark past',
+    age:          '31',
+    image:        'https://metrouk2.files.wordpress.com/2016/07/miss-scarlett.jpg',
+    occupation:   'Actor'
+  };
+  var mrsPeacock = {
+    first_name:   'Eleanor',
+    last_name:    'Peacock',
+    color:        'blue',
+    description:  'She is from a wealthy family and uses her status and money to earn popularity',
+    age:          '36',
+    image:        'https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg',
+    occupation:   'Socialité'
+  };
+  var mrMustard = {
+    first_name:   'Jack',
+    last_name:    'Mustard',
+    color:        'yellow',
+    description:  'He is a former football player who tries to get by on his former glory',
+    age:          '62',
+    image:        'https://metrouk2.files.wordpress.com/2016/07/colonel-mustard.jpg',
+    occupation:   'Retired Football player'
+  };
+  // Characters' Collection
+  var charactersArray = [];
+  charactersArray.push(mrGreen, drOrchid, profPlum, missScarlet, mrsPeacock, mrMustard);
+  // Weapons
+  var rope        = { name: 'rope',         weight: 10 };
+  var knife       = { name: 'knife',        weight: 8 };
+  var candlestick = { name: 'candlestick',  weight: 2 };
+  var dumbbell    = { name: 'dumbbell',     weight: 30 };
+  var poison      = { name: 'poison',       weight: 2 };
+  var axe         = { name: 'axe',          weight: 15 };
+  var bat         = { name: 'bat',          weight: 13 };
+  var trophy      = { name: 'trophy',       weight: 25 };
+  var pistol      = { name: 'pistol',       weight: 20 };
+  // Weapons' Collection
+  var weaponsArray = [];
+  weaponsArray.push(rope, knife, candlestick, dumbbell, poison, axe, bat, trophy, pistol);
+  // Rooms
+  var diningRoom   = { name: 'Dinning Room' };
+  var conservatory = { name: 'Conservatory' };
+  var kitchen      = { name: 'Kitchen' };
+  var study        = { name: 'Study' };
+  var library      = { name: 'Library' };
+  var billiardRoom = { name: 'Billiard Room' };
+  var lounge       = { name: 'Lounge' };
+  var ballroom     = { name: 'Ballroom' };
+  var hall         = { name: 'Hall' };
+  var spa          = { name: 'Spa' };
+  var livingRoom   = { name: 'Living Room' };
+  var observatory  = { name: 'Observatory' };
+  var theater      = { name: 'Theater' };
+  var guestHouse  =  { name: 'Guest House' };
+  var patio        = { name: 'Patio' };
+  // Rooms' Collection
+  var roomsArray = [];
+  roomsArray.push(diningRoom, conservatory, kitchen, study, library, billiardRoom, lounge, ballroom, hall, spa, livingRoom, observatory, theater, guestHouse, patio);
