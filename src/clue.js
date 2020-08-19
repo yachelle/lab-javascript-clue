@@ -92,7 +92,9 @@ const roomsArray = [
   { name: "Patio" },
 ];
 // ITERATION 2
-function selectRandom(array) {}
+function selectRandom(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
 
 function pickMystery() {
   return {
@@ -107,8 +109,8 @@ function pickMystery() {
 function revealMystery(envelope) {
   let firstName = envelope.suspect.firstName;
   let lastName = envelope.suspect.lastName;
-  let weapon = envelope.suspect.weapon;
-  let room = envelope.suspect.room;
+  let weapon = envelope.weapon.name;
+  let room = envelope.room.name;
 
-  return `${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}`;
+  return `${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}!`;
 }
