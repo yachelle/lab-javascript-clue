@@ -104,8 +104,6 @@ function pickMystery() {
   };
 }
 
-// ITERATION 3
-
 function revealMystery(envelope) {
   let firstName = envelope.suspect.firstName;
   let lastName = envelope.suspect.lastName;
