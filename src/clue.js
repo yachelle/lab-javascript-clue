@@ -61,7 +61,7 @@ const suspectsArray = [
     color: "yellow",
   },
 ];
-// Rooms Collection
+// Weapons Collection
 const weaponsArray = [
   { name: "rope", weight: 10 },
   { name: "knife", weight: 8 },
@@ -73,7 +73,7 @@ const weaponsArray = [
   { name: "trophy", weight: 25 },
   { name: "pistol", weight: 20 },
 ];
-// Weapons Collection
+// Rooms Collection
 const roomsArray = [
   { name: "Dining Room" },
   { name: "Conservatory" },
@@ -92,30 +92,25 @@ const roomsArray = [
   { name: "Patio" },
 ];
 // ITERATION 2
-
-function selectRandom (array) {
-    return items[Math.floor(Math.random()*items.length)];
+function selectRandom(array) {
+    return array[Math.floor(Math.random()*array.length)];
 }
-selectRandom()
 
-funtion pickMystery () {
-    return {
-        suspect: selectRandom(suspectsArray),
-        weapon: selectRandom(weaponsArray),
-        room: selectRandom(roomsArray)
-    }  
+function pickMystery() {
+  return {
+    suspect: selectRandom(suspectsArray),
+    weapon: selectRandom(weaponsArray),
+    room: selectRandom(roomsArray),
+  };
 }
 
 // ITERATION 3
 
-function revealMystery (envelope){
-    let firstName = envelope.suspect.firstName;
-    let lastName = envelope.suspect.lastName;
-    let weapon = envelope.suspect.weapon;
-    let room = envelope.suspect.room;
+function revealMystery(envelope) {
+  let firstName = envelope.suspect.firstName;
+  let lastName = envelope.suspect.lastName;
+  let weapon = envelope.weapon.name;
+  let room = envelope.room.name;
 
-    return  `${firstName} ${lastName} killed Mr. Boddy using ${weapon} in the ${room}!`
+  return `${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in the ${room}!`;
 }
-
-
-
